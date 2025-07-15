@@ -1,0 +1,186 @@
+#dm12345 {
+  background: linear-gradient(87deg, #282a2b, #00BCD4) !important;
+  border-radius: 10px !important;
+  padding: 20px !important;
+  margin: 10px 0px;
+}
+
+.dig_container {
+  display: flex;
+  gap: 1.1em;
+  justify-content: center;
+  object-fit: fill;
+  width: 100%;
+}
+
+.card {
+  height: 400px;
+  width: 32%;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.card__img {
+  transition: all 0.5s;
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+}
+
+.card:hover .card__img {
+  filter: blur(2px) !important;
+}
+
+.card__info {
+  position: absolute;
+  bottom: 0;
+  transition: all 0.5s;
+  background-color: #ffdbf0;
+  padding: 0 10px;
+  width: 100%;
+  opacity: 0.85;
+  border-radius: 10px;
+}
+
+.card__description {
+  margin-bottom: 5px;
+  background-color: #fdd8fa;
+  color: black;
+  font-size: 20px;
+}
+
+.xplorebtn {
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #ff0088;
+  margin-bottom: 10px;
+  border-radius: 50px;
+  transition: background-color 1s;
+  box-shadow: 0px 5px 15px rgba(255, 20, 147, 0.3);
+  font-weight: 700;
+}
+
+.xplorebtn:hover {
+  background-color: #fdd8fa;
+  color: black;
+  scale: 1;
+}
+
+.dm_container_h1 {
+  font-size: 3.2rem;
+  margin: 32px auto;
+  width: max-content;
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 10px;
+  background: linear-gradient(69deg, #ffffff, #f2977a);
+  box-shadow: 0px 4px 15px rgba(255, 0, 138, 0.3);
+  transition: all 0.4s ease-in-out;
+  color: transparent;
+  background-clip: text;
+}
+
+h1.dm_container_h1.digi_animate:hover {
+  /* background: linear-gradient(90deg, #FF008A, #0089FF); */
+  color: white;
+  transform: scale(1.05);
+}
+
+.xplorebtns_dm {
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  margin: 20px;
+  padding: 5px 10px;
+  text-wrap: nowrap;
+  width: max-content;
+  background: transparent;
+  margin-bottom: 10px;
+  border-radius: 50px;
+  transition: all 1s;
+
+  cursor: pointer;
+
+  transition: all 0.5s;
+  font-weight: 600;
+}
+
+.xplorebtns_dm:hover {
+  scale: 1;
+  /* background: linear-gradient(180deg, #FF008A, #0089FF); */
+  color: rgb(255, 255, 255);
+}
+
+.dm_container_content_hmm {
+  color: white;
+  font-size: 16px;
+}
+
+@media (max-width: 780px) {
+  .dig_container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .xplorebtns_dm {
+    position: relative;
+    right: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .dig_container {
+    display: flex;
+    flex-direction: column;
+    gap: auto;
+  }
+
+  .dm_container_h1 {
+    font-size: 1.7rem;
+
+    width: auto;
+  }
+
+  .card__heading {
+    font-size: 22px;
+  }
+
+  .card__info {
+    opacity: 1;
+  }
+
+  .card__description {
+    font-size: 18px;
+    background-color: transparent;
+  }
+
+  .smm_container_h1 {
+    display: block;
+    color: #ff1493;
+    font-size: 1.75em;
+    margin: auto;
+    width: auto;
+  }
+
+  .xplorebtns_dm {
+    width: 97%;
+    position: absolute;
+    margin: 10px;
+
+    right: 0;
+  }
+}

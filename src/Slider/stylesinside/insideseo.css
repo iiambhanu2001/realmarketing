@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.seo-section {
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+}
+
+.seo-section_container {
+  width: 90%;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.seo-section_title {
+  font-size: 3.2rem;
+  text-align: center;
+  color: white;
+  margin: 32px auto;
+  background: linear-gradient(69deg, #ff008a, #0089ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  box-shadow: 0px 4px 15px rgba(255, 0, 138, 0.3);
+  transition: all 0.4s ease-in-out;
+}
+
+.seo-section_title:hover {
+  transform: scale(1.05);
+}
+
+.seo-section_subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;
+}
+
+.seo-section_cta {
+  font-size: 1rem;
+  color: white;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  border: none;
+}
+
+.seo-section_cta:hover {
+  background: linear-gradient(145deg, #b7003f, #383838);
+  color: #fff;
+}
+
+.seo-section_cards {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.seo-section_card {
+  width: 31%;
+  height: 400px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  background: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.seo-section_card:hover {
+  transform: translateY(-5px);
+}
+
+.seo-section_card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease-in-out;
+  border-radius: 20px;
+}
+
+.seo-section_card:hover img {
+  filter: blur(2px);
+}
+
+.seo-section_info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.92);
+  padding: 10px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  transition: transform 0.4s ease;
+}
+
+.seo-section_heading {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #000;
+}
+
+.seo-section_desc h5 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+.seo-section_btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  background: #ff008a;
+  color: white;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0px 5px 15px rgba(255, 0, 138, 0.3);
+}
+
+.seo-section_btn:hover {
+  background: #ffd2fc;
+  color: #000;
+  transform: scale(1.08);
+}
+
+.txt-decoration_underline {
+  font-weight: bold;
+  color: #ff1493;
+  background-image: linear-gradient(90deg, #ff0088, #ff0080);
+  background-repeat: no-repeat;
+  background-size: 100% 10%;
+  background-position: 0% 100%;
+  transition: background-size 1s ease-out;
+}
+
+.txt-decoration_underline:hover {
+  background-size: 100% 100%;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .seo-section_card {
+    width: 48%;
+  }
+}
+
+@media (max-width: 768px) {
+  .seo-section_title {
+    font-size: 2.5rem;
+  }
+  .seo-section_card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .seo-section_title {
+    font-size: 1.8rem;
+  }
+
+  .seo-section_subtitle {
+    font-size: 1rem;
+  }
+
+  .seo-section_desc h5 {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,308 @@
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: transparent;
+    }
+
+    section.section-smm-hidden {
+        /* display: flex; */
+        /* gap: 2em; */
+        background: linear-gradient(45deg, #090909, #114a76) !important;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .container {
+        max-width: 1300px;
+        text-align: center;
+        width: 90%;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .container_seo_dynamic {
+        display: flex;
+        gap: 1.1rem;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 1.5rem;
+
+    }
+
+    .card_smm {
+        height: 400px;
+        width: 32%;
+        border-radius: 5px;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        border-radius: 20px;
+        box-shadow: 5px 10px 10px #acd8db;
+    }
+
+    .card__img {
+
+        transition: all 0.5s;
+        object-fit: fill;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+    }
+
+    .card_border_tran {
+        border: 0px solid blueviolet;
+        transition: border 0.5s ease-in-outs;
+    }
+
+
+    .card:hover .card__img {
+        filter: blur(2px) !important;
+    }
+
+    .card__info {
+        position: absolute;
+        bottom: 0;
+        transition: all 0.5s;
+        background-color: #ffdbf0;
+        padding: 0 10px;
+        width: 100%;
+        opacity: 0.8;
+
+    }
+
+    .card__description {
+        margin-bottom: 5px;
+        background-color: #fdd8fa;
+        color: black;
+        font-size: 20px;
+    }
+
+    .xplorebtn {
+        font-size: 1rem;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        display: inline-block;
+        padding: 5px 10px;
+        background-color: #ff0088;
+        margin-bottom: 10px;
+        border-radius: 50px;
+        transition: background-color 1s;
+        box-shadow: 0px 5px 15px rgba(255, 20, 147, 0.3);
+        font-weight: 700;
+    }
+
+    .xplorebtn:hover {
+        background-color: #fdd8fa;
+        color: black;
+
+    }
+
+
+    .smm_container_h1,
+    .smm_container_h1_mobile {
+        color: #000000;
+        font-size: 3em;
+        margin: 32px auto;
+        padding: 5px 10px;
+        width: max-content;
+        box-shadow: 5px 5px 10px rgb(185, 154, 171);
+        text-align: center;
+        transition: all 0.52s ease;
+        background: rgba(255, 255, 255, 0.952);
+        background-clip: text;
+        color: color-mix(in srgb, #0089ff 5%, #ff004e 4%);
+        word-wrap: break-word;
+
+    }
+
+    .text-deco-smm {
+        display: inline-block;
+        position: relative;
+        text-decoration: none;
+        color: rgb(67, 242, 255);
+        font-weight: bold;
+        z-index: 9999;
+        transition: opacity 1s ease;
+    }
+
+    .smm_container_h1:hover {
+        .text-deco-smm {
+            color: white !important;
+        }
+
+        /* background: linear-gradient(69deg, #ff008a, #0089ff); */
+        color: white;
+        z-index: 999;
+        scale: 1.08;
+    }
+
+
+    .text-deco-smm.smm_animate {
+        opacity: 1;
+    }
+
+    .text-deco-smm.smm_animate::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0px;
+        width: 0%;
+
+        overflow: hidden;
+
+        height: 5px;
+
+        background-color: #2e0221;
+
+
+        /* transition: width 0.3s ease ,height 0.3s ease-in-out 0.3s; */
+        animation: widthincrease 3s forwards;
+        transition: height 1.5s ease-in-out;
+        z-index: -9;
+    }
+
+    @keyframes widthincrease {
+        0% {
+            width: 0;
+
+
+        }
+
+        100% {
+            width: 100%;
+
+        }
+    }
+
+
+    .text-deco-smm:hover::after {
+
+        height: 60px;
+        color: #918f8f;
+        /* width: 100%; */
+        bottom: 0;
+
+    }
+
+    .smm_container_h1_mobile {
+        display: none;
+    }
+
+
+    .xplorebtns_smm {
+        font-size: 1rem;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+        margin: 20px;
+        padding: 5px 10px;
+        text-wrap: nowrap;
+        width: max-content;
+        background: lch(100 0 0 / 0.1);
+        margin-bottom: 10px;
+        border-radius: 5px;
+        transition: background-color 1s;
+        box-shadow: 0px 5px 15px rgb(255, 255, 255);
+
+        cursor: pointer;
+        transition: all .51s;
+        font-weight: 700;
+
+    }
+
+
+    .xplorebtns_smm:hover {
+
+        background: transparent;
+
+        color: rgb(255, 255, 255);
+
+
+    }
+
+    @media(max-width:780px) {
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card {
+            width: 99%;
+        }
+
+        .xplorebtns_smm {
+            width: 100%;
+        }
+    }
+
+    @media(max-width:520px) {
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+        }
+
+        .smm_container_h1 {
+            font-size: 1.75em;
+
+        }
+
+        .smm_container_h1 {
+
+            width: auto;
+
+        }
+
+        .card {
+
+            width: 100%;
+
+        }
+
+        .card__heading {
+            font-size: 22px;
+        }
+
+        .card__info {
+            opacity: 1;
+        }
+
+
+        .text-deco-smm.smm_animate::after {
+            content: none;
+
+        }
+
+
+        .card__description {
+
+            font-size: 18px;
+            background-color: transparent;
+            cursor: pointer;
+
+        }
+
+        .smm_container_h1_mobile {
+            display: block;
+
+            font-size: 2.2rem;
+            width: max-content;
+            margin: auto;
+            margin-bottom: 10px;
+            box-shadow: 1px 1px rgb(236, 236, 236);
+        }
+
+        .xplorebtns_smm {
+            width: 97%;
+            position: absolute;
+            margin: 10px;
+
+            right: 0;
+        }
+    }

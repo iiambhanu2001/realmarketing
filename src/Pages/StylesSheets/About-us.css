@@ -1,0 +1,277 @@
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+   
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: transparent;
+
+        margin: 0;
+        padding: 0;
+        color: #333;
+        text-align: center;
+    }
+
+    .hero-about {
+        background: linear-gradient(138deg, #004664, #090005);
+        padding: 80px 20px;
+        animation: fadeIn 1s ease-in-out;
+        margin-bottom: 1.4rem;
+        position: relative;
+        color: #ffe7ba;
+        margin: 10px;
+    }
+
+    .hero-about::after {
+        content: "";
+        background: conic-gradient(from var(--angle), transparent, #ff0080, transparent, #00ffc8);
+        position: absolute;
+        inset: -10px;
+        padding: 10px;
+        z-index: -9999;
+        animation: rotation-image 3s linear infinite;
+       color: #ebd79b;
+        filter: blur(2px);
+
+    }
+
+    .hero-about:hover::after {
+
+        .hero-about::after {
+            display: block;
+        }
+    }
+
+
+
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+
+    .hero-about h1 {
+        font-size: 3rem;
+        font-weight: 600;
+
+    }
+
+    .gradient-text {
+        /* background: linear-gradient(69deg, #FF008A, #0089FF);
+        -webkit-background-clip: text; */
+        color: #ebd79b;
+    }
+
+    .hero-about p {
+        font-size: 1.2rem;
+        margin: 10px 0;
+        color: #ffce84;
+    }
+
+    .hero-about-buttons {
+        margin-top: 20px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        padding: 12px 20px;
+        font-size: 1rem;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .btn-primary {
+        background-color: #FF008A;
+        color: white !important;
+        box-shadow: 0px 4px 12px rgba(255, 0, 138, 0.4);
+    }
+
+    .btn-primary:hover {
+        background-color: #0089FF;
+
+    }
+
+    .btn-secondary {
+        background-color: #00C2FF;
+        color: white;
+        margin-left: 10px;
+    }
+
+    .btn-secondary:hover {
+        background-color: #FF008A;
+        color: white;
+    }
+
+
+    .our-story {
+        padding:60px 20px;
+
+    }
+
+    .story-content h2 {
+        font-size: 24px;
+    }
+
+    .story-content p {
+        font-size: 18px;
+    }
+
+    .our-expertise {
+        padding:0px 20px 60px 20px;
+    }
+
+    .expertise-cards {
+        display: flex;
+        gap: 2rem;
+        justify-content: space-around;
+
+    }
+
+    .card-aboutus {
+        background: #004a6d;
+        padding: 20px;
+        border-radius: 10px;
+        width: 250px;
+        box-shadow: 0px 6px 15px rgba(4, 180, 255, 0.5);
+        transition: 0.3s;
+        position: relative;
+        margin-top: 2em;
+        color: #ffccde;
+    }
+
+    .card-aboutus:hover {
+        color: #fff;
+    }
+
+    .card-aboutus::after {
+        content: "";
+
+
+        background: conic-gradient(from var(--angle), #0c63e7, #060c21, #d11149, #060c21, #0c63e7);
+        position: absolute;
+        inset: -5px;
+        padding: 5px;
+        z-index: -9999;
+        filter: blur(2px);
+    }
+
+    .card-aboutus:hover::after {
+        animation: rotation-image 3s linear infinite;
+
+    }
+
+    @keyframes rotation-image {
+        from {
+            --angle: 53deg;
+        }
+
+        to {
+            --angle: 413deg;
+        }
+    }
+
+    .card:hover {
+        box-shadow: 0px 10px 25px rgba(193, 236, 255, 0.6);
+    }
+
+
+    .testimonials {
+        background: linear-gradient(70deg, rgb(0 133 158), rgb(213 14 96 / 0%));
+        padding: 40px;
+        margin: 40px 0;
+    }
+
+    .testimonials-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        position: relative;
+    }
+
+    .team-grid {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .team-member img {
+        width: 150px;
+        border-radius: 50%;
+    }
+
+    .team-member {
+        background: #002a3d;
+        color: #ebd79b;
+        padding: 15px;
+        border-radius: 10px;
+        transition: 0.3s;
+    }
+
+    .team-member:hover {
+        transform: scale(1.05);
+    }
+
+    .final-cta {
+        background: linear-gradient(268deg, #C1ECFF, #FFDBF0);
+        padding: 60px 20px;
+    }
+
+    .final-cta a {
+        display: inline-block;
+        margin-top: 15px;
+    }
+
+    @media (max-width: 450px) {
+        * {
+            animation: none !important;
+        }
+
+        .hero-about-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            width: 100%;
+        }
+
+        .card-aboutus {
+            width: 100%;
+        }
+
+        .testimonials-cards {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .expertise-cards {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+        }
+
+        .team-grid {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+        }
+
+        .story-content p {
+            font-size: 16px;
+        }
+
+    }
