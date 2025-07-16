@@ -2,12 +2,15 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
+import logo from "./Images/Logo.jpg"
 import "./App.css"
 function Header() {
   return (
     <Navbar expand="lg" bg="light" variant="light">
       <Container>
-        <Navbar.Brand href="#home">Real Marketing</Navbar.Brand>
+        <Navbar.Brand href="#home">
+          <img src={logo} width="150"/>
+        </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
