@@ -2,7 +2,8 @@
   "name": "realmarketing",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://iiambhanu2001/RealMarketing",
+  "homepage": "/",
+
 
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
