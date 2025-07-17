@@ -19,7 +19,7 @@ function Header() {
             <Nav.Link as={Link} to="/">
               Home
             </Nav.Link>
-            <Nav.Link as={Link} to="/About us">
+            <Nav.Link as={Link} to="/about-us">
               About Us
             </Nav.Link>
             <Nav.Link as={Link} to="/SEO">
@@ -31,7 +31,7 @@ function Header() {
             <Nav.Link as={Link} to="/DM">
               DM
             </Nav.Link>
-            <Nav.Link as={Link} to="/Contact-Us">
+            <Nav.Link as={Link} to="/contact-Us">
               Contact Us
             </Nav.Link>
           </Nav>
